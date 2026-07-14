@@ -6,6 +6,6 @@ public class DbInitializer
 {
     public static void Initialize(AltavixDbContext context)
     {
-        context.Database.EnsureCreated();
+        context.Database.Migrate();
     }
 }

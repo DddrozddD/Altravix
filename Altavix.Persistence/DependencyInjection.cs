@@ -23,6 +23,19 @@ public static class DependencyInjection
         
         services.AddScoped<Altavix.Application.Interfaces.IAuthService, Services.AuthService>();
         
+        services.AddScoped(typeof(Altavix.Domain.Repositories.IBaseRepository<>), typeof(Repositories.BaseRepository<>));
+        var repositoryTypes = typeof(DependencyInjection).Assembly.GetTypes()
+            .Where(t => t.IsClass && !t.IsAbstract && t.Name.EndsWith("Repository") && t.Name != "BaseRepository`1");
+
+        foreach (var type in repositoryTypes)
+        {
+            var interfaceType = type.GetInterfaces().FirstOrDefault(i => i.Name == $"I{type.Name}");
+            if (interfaceType != null)
+            {
+                services.AddScoped(interfaceType, type);
+            }
+        }
+
         return services;
     }
 }
