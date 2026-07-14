@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AltavixAPI", "AltavixAPI.csproj", "{FED94F89-0888-4506-A9A0-70EFF0D6D3E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7DC5EDBF-646D-462D-AD34-0FA79053BECC}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cors", "Cors", "{1BF30942-0C82-4ACF-904D-7480605F591A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{67F2C39A-0EF3-4965-BE32-84311A25537F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{2DF0E506-4070-4CB4-99D8-F0944D336357}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altavix.Domain", "..\Altavix.Domain\Altavix.Domain.csproj", "{0B90CC41-A5EA-43B9-81F1-2418A4B8503A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altavix.Application", "..\Altavix.Application\Altavix.Application.csproj", "{6562D981-F359-46B6-8A82-CE9793C9D417}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altavix.Persistence", "..\Altavix.Persistence\Altavix.Persistence.csproj", "{DAA1CEF4-143F-4DC8-A10F-EA0D8EE020C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FED94F89-0888-4506-A9A0-70EFF0D6D3E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FED94F89-0888-4506-A9A0-70EFF0D6D3E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FED94F89-0888-4506-A9A0-70EFF0D6D3E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FED94F89-0888-4506-A9A0-70EFF0D6D3E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B90CC41-A5EA-43B9-81F1-2418A4B8503A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B90CC41-A5EA-43B9-81F1-2418A4B8503A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B90CC41-A5EA-43B9-81F1-2418A4B8503A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B90CC41-A5EA-43B9-81F1-2418A4B8503A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6562D981-F359-46B6-8A82-CE9793C9D417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6562D981-F359-46B6-8A82-CE9793C9D417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6562D981-F359-46B6-8A82-CE9793C9D417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6562D981-F359-46B6-8A82-CE9793C9D417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAA1CEF4-143F-4DC8-A10F-EA0D8EE020C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAA1CEF4-143F-4DC8-A10F-EA0D8EE020C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAA1CEF4-143F-4DC8-A10F-EA0D8EE020C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAA1CEF4-143F-4DC8-A10F-EA0D8EE020C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FED94F89-0888-4506-A9A0-70EFF0D6D3E1} = {2DF0E506-4070-4CB4-99D8-F0944D336357}
+		{0B90CC41-A5EA-43B9-81F1-2418A4B8503A} = {1BF30942-0C82-4ACF-904D-7480605F591A}
+		{6562D981-F359-46B6-8A82-CE9793C9D417} = {1BF30942-0C82-4ACF-904D-7480605F591A}
+		{DAA1CEF4-143F-4DC8-A10F-EA0D8EE020C3} = {67F2C39A-0EF3-4965-BE32-84311A25537F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,6 @@
+@AltavixAPI_HostAddress = http://localhost:5052
+
+GET {{AltavixAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
