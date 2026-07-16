@@ -17,7 +17,6 @@ public class AltavixDbContext : IdentityDbContext<UserEntity, RoleEntity, Guid>,
     {
         base.OnModelCreating(modelBuilder);
         
-        // This line automatically applies all our configurations (ProductConfiguration, UserConfiguration, etc.)
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
     }
 }

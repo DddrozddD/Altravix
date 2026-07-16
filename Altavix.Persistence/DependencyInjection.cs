@@ -36,6 +36,8 @@ public static class DependencyInjection
             }
         }
 
+        services.AddScoped<IDbConnectionFactory, Factories.DbConnectionFactory>();
+
         return services;
     }
 }
